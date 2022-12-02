@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 6528943900138404734}
   - component: {fileID: 361939580895274761}
   - component: {fileID: 361939580895274762}
-  - component: {fileID: 5207047955069246399}
   - component: {fileID: -11134769947865183}
   m_Layer: 0
   m_Name: Obstacle
@@ -65,19 +64,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.579422, y: 1.1484454, z: 4.976227}
   m_Center: {x: 0.013418198, y: 0.48041117, z: -0.17066574}
---- !u!114 &5207047955069246399
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1215130938519286139}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02595b80e50ee1a4d94b7012e6394ac3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  obstaclePerfab: {fileID: 1574251093279545299, guid: aa7a79e53bee7d64e9b1fb9894a773a5, type: 3}
 --- !u!114 &-11134769947865183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -101,6 +87,7 @@ GameObject:
   - component: {fileID: 8461612695128221836}
   - component: {fileID: 8436413164189192220}
   - component: {fileID: 8446439214011497216}
+  - component: {fileID: 2135452399796156558}
   m_Layer: 0
   m_Name: Prop_StoneWall_01
   m_TagString: Untagged
@@ -173,3 +160,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2135452399796156558
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8459976150116651316}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.129447, y: 1.0412976, z: 0.5070782}
+  m_Center: {x: 2.455996, y: 0.5206488, z: 0}

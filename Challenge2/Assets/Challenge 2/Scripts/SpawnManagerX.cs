@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -28,5 +28,5 @@ public class SpawnManagerX : MonoBehaviour
         // instantiate ball at random spawn location
         Instantiate(ballPrefabs[0], spawnPos, ballPrefabs[0].transform.rotation);
     }
-
+D
 }
