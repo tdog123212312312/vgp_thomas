@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     public AudioClip crashSound;
     public AudioClip crashSound2;
     public AudioClip crashSound3;
+    public bool doubleSpeed = false;
 
 
     // Start is called before the first frame update
@@ -64,6 +65,17 @@ public class PlayerController : MonoBehaviour
             playerAudio.PlayOneShot(crashSound2, 1.0f);
             playerAudio.PlayOneShot(crashSound3, 1.0f);
         }
+        if(Input.GetKey(KeyCode.LeftShift))
+    {
+        doubleSpeed = true;
+        playerAnim.SetFloat("Speed_Multiplier", 2.0f);
+    }
+    else if (doubleSpeed)
+    {
+        doubleSpeed = false;
+        playerAnim.SetFloat("Speed_Multiplier", 1.0f);
+    }
+    
     }
 }
 

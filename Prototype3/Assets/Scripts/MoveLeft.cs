@@ -27,6 +27,20 @@ public class MoveLeft : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        if (playerControllerScript.gameOver == false)
+    {
+        if (playerControllerScript.doubleSpeed)
+        {
+            transform.Translate(Vector3.left * Time.deltaTime * (speed * 2));
+        }
+        else
+        {
+            transform.Translate(Vector3.left * Time.deltaTime * speed);
+        }
         
     }
 }
+    }
+    
+        
+   
