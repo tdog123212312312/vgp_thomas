@@ -312,7 +312,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 0ad8d73642d767e4490c865927d25dc2, type: 3}
+  m_audioClip: {fileID: 8300000, guid: c8d4737af40567b44bc13733f40703c3, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.708
   m_Pitch: 1
@@ -879,7 +879,7 @@ MonoBehaviour:
   jumpSound: {fileID: 8300000, guid: fc613ef527cd5704dbd4cf599e1ad0d4, type: 3}
   crashSound: {fileID: 8300000, guid: 858ed5e0e702bf44fb45d9105f323ed6, type: 3}
   crashSound2: {fileID: 8300000, guid: 8ede6f5310602c04ba22bea1e7fbc315, type: 3}
-  crashSound3: {fileID: 0}
+  crashSound3: {fileID: 8300000, guid: 86ece5affde2f2841b2c65d174aae36f, type: 3}
 --- !u!65 &2047894033
 BoxCollider:
   m_ObjectHideFlags: 0
