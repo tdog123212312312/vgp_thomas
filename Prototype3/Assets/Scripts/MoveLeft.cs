@@ -5,6 +5,7 @@ using UnityEngine;
 public class MoveLeft : MonoBehaviour
 
 {
+    private bool doubleSpeed;
     private float speed = 30;
     private PlayerController playerControllerScript;
     private float leftBound = -15;
@@ -29,7 +30,7 @@ public class MoveLeft : MonoBehaviour
         }
         if (playerControllerScript.gameOver == false)
     {
-        if (playerControllerScript.doubleSpeed)
+        if (playerControllerScript)
         {
             transform.Translate(Vector3.left * Time.deltaTime * (speed * 2));
         }
