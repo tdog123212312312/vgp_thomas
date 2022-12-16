@@ -15,22 +15,10 @@ public class MoveLeft : MonoBehaviour
         playerControllerScript = GameObject.Find("Player").GetComponent<PlayerController>();
         
     }
-
+    
     // Update is called once per frame
     void Update()
-    {
-        if (playerControllerScript.gameOver == false) 
-        {
-             transform.Translate(Vector3.left * Time.deltaTime * speed);
-        }
-        
-        if(transform.position.x < leftBound && gameObject.CompareTag("Obstacle"))
-        {
-            Destroy(gameObject);
-        }
-        if (playerControllerScript.gameOver == false)
-    {
-        if (playerControllerScript)
+    {   if (playerControllerScript)
         {
             transform.Translate(Vector3.left * Time.deltaTime * (speed * 2));
         }
@@ -38,10 +26,14 @@ public class MoveLeft : MonoBehaviour
         {
             transform.Translate(Vector3.left * Time.deltaTime * speed);
         }
+        if (transform.position.x < leftBound && gameObject.CompareTag("Obstacle"))
+        {
+            Destroy(gameObject);
+        }
         
     }
 }
-    }
+    
     
         
    
