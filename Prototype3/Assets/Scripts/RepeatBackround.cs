@@ -6,9 +6,11 @@ public class RepeatBackround : MonoBehaviour
 {
         private Vector3 startPos;
         private float repeatWidth;
+        private PlayerController playerControllerScript;
     // Start is called before the first frame update
     void Start()
     {
+        playerControllerScript = GameObject.Find("Player").GetComponent<PlayerController>();
         startPos = transform.position;
        repeatWidth = GetComponent<BoxCollider>().size.x / 2; 
     }
@@ -16,7 +18,7 @@ public class RepeatBackround : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      if (transform.position.x < startPos.x - repeatWidth)
+      if (transform.position.x < startPos.x - repeatWidth && !playerControllerScript.gameOver)
         {
         transform.position = startPos;
         }

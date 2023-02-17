@@ -3,7 +3,12 @@ guid: 12e85ac19176ab444850dca9a6192033
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - explosionParticle: {fileID: 9125212449759046732, guid: cb7cd9b0c56a24d49a40784bd3203ae6, type: 3}
+  - dirtParticle: {fileID: 1438565936, guid: fb82dfb8d1c7044c69afd2486befecb3, type: 3}
+  - jumpSound: {fileID: 8300000, guid: fc613ef527cd5704dbd4cf599e1ad0d4, type: 3}
+  - crashSound: {fileID: 8300000, guid: 858ed5e0e702bf44fb45d9105f323ed6, type: 3}
+  - crashSound2: {fileID: 8300000, guid: 5b683f067d4d91342a04a98add795777, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

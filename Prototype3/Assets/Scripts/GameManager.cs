@@ -16,9 +16,10 @@ public class GameManager : MonoBehaviour
         playerControllerScript = 
         GameObject.Find("Player").GetComponent<PlayerController>();
         score = 0;
-    {
+    }
 
     // Update is called once per frame
+    /*
     void Update()
     {
         if(!playerControllerScript.gameOver)
@@ -31,13 +32,13 @@ public class GameManager : MonoBehaviour
             {
                 score++;
             }
-            Debug.Log("Score: " + score);
 
 
         }
     }
     }
     }
+    */
 }
 
 
